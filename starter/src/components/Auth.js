@@ -2,6 +2,7 @@ import {useState} from 'react'
 import axios from 'axios'
 import { useContext } from 'react'
 import AuthContext from '../store/authContext'
+
  
 const Auth = () => {
    const [username, setUsername] = useState('')
@@ -15,7 +16,8 @@ const Auth = () => {
  
        console.log('submitHandler called')
 
-       const url = 'https://socialmtn.devmountain.com'
+    //    const url = 'https://socialmtn.devmountain.com'
+        const url = 'http://localhost:8008'
 
        const body = {username, password}
 
