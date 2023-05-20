@@ -37,7 +37,7 @@ const Auth = () => {
    return (
        <main>
            <h1>Welcome!</h1>
-           <form className='form auth-form' onSubmit={submitHandler}>
+           <form className='form auth-form' onSubmit={e => submitHandler(e)}>
                <input
                    className='form-input' type="text" placeholder="Username" value={username}
                    onChange={e => setUsername(e.target.value)}/>
