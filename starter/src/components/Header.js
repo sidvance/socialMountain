@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom'
-import AuthContext from '../store/authContext'
+import AuthContext from '../store/authContext.js'
 import { useContext } from 'react'
 
 import logo from '../assets/dm-logo-white.svg'

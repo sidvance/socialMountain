@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import axios from 'axios'
 import { useContext } from 'react'
-import AuthContext from '../store/authContext'
+import AuthContext from '../store/authContext.js'
 
  
 const Auth = () => {
@@ -21,7 +21,7 @@ const Auth = () => {
 
        const body = {username, password}
 
-       axios.post(register ? `${url}/reigster` : `${url}/login`, body)
+       axios.post(register ? `${url}/register` : `${url}/login`, body)
             .then(res => {
                 console.log('authing!!!', res.data)
                 authCtx.login(res.data.token, res.data.exp, res.data.userId)
